@@ -1,13 +1,19 @@
-import { AppContainer } from './components/AppContainer';
-import { AppThemeProvider } from './components/AppThemeProvider';
-import { Page } from './components/Page';
+import { AppContainer } from '@/components/AppContainer';
+import { AppThemeProvider } from '@/features/theme/ThemeProvider';
+import { Page } from '@/components/Page';
+import { Header } from './components/Header';
+import { NewTodo } from '@/features/todo/NewTodo';
+import { useFetchTodo } from '@/features/todo/useFetchTodo';
 
 function App() {
+  useFetchTodo();
+
   return (
     <AppThemeProvider>
       <Page>
         <AppContainer>
-          <div>tst</div>
+          <Header />
+          <NewTodo />
         </AppContainer>
       </Page>
     </AppThemeProvider>

@@ -6,14 +6,10 @@
 :root {
   /* Typography */
   --family: 'Josefin Sans', sans-serif;
-  --fs: 14px;
+  --fs: 18px;
   --fw-normal: 400;
   --fw-bold: 700;
 
   /* Other */
-  --radii: 0.5rem;
-
-  /* Color */
-  --bg-check: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
-  --primary: hsl(220, 98%, 61%);
+  --radii: 5px;
 }
