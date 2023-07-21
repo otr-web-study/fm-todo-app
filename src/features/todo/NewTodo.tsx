@@ -3,7 +3,8 @@ import { useNewTodo } from './useNewTodo';
 
 const Form = styled.form`
   min-height: 46px;
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr;
   align-items: center;
   gap: 10px;
   padding-inline: 20px;
@@ -21,7 +22,7 @@ const Button = styled.button.attrs({
   type: 'submit',
 })`
   position: relative;
-  width: 22px;
+  width: 21px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: ${(props) => props.theme.bgSecondary};
@@ -48,10 +49,11 @@ const Button = styled.button.attrs({
 
   &:hover::after {
     opacity: 1;
+    border: none;
   }
 
   @media (min-width: 640px) {
-    width: 27px;
+    width: 26px;
   }
 `;
 
