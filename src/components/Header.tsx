@@ -8,7 +8,7 @@ const HeaderEl = styled.header`
   padding: 46px 0 33px;
 
   @media (min-width: 640px) {
-    padding: 80px 0 50px;
+    padding: 80px 0 35px;
   }
 `;
 

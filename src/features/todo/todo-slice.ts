@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction, nanoid } from '@reduxjs/toolkit';
-import { Todo } from '@/types/Todo';
+import { type Todo } from '@/types/Todo';
 
 interface TodoSlice {
   list: Todo[];

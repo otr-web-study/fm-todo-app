@@ -14,7 +14,9 @@ const darkTheme = {
   /* Colors */
   bg: 'hsl(235, 21%, 11%)',
   bgSecondary: 'hsl(235, 24%, 19%)',
-  fcLight: 'hsl(234, 39%, 85%)',
+  fcVeryLight: 'hsl(237, 14%, 26%)',
+  fcLight: 'hsl(234, 11%, 52%)',
+  fc: 'hsl(234, 39%, 85%)',
 };
 
 const lightTheme = {
@@ -24,7 +26,9 @@ const lightTheme = {
   /* Colors */
   bg: 'hsl(0, 0%, 98%)',
   bgSecondary: 'white',
-  fcLight: 'hsl(233, 11%, 84%)',
+  fcVeryLight: 'hsl(236, 33%, 92%)',
+  fcLight: 'hsl(236, 9%, 61%)',
+  fc: 'hsl(235, 19%, 35%)',
 };
 
 export const AppThemeProvider: FC<AppThemeProviderProps> = ({ children }) => {

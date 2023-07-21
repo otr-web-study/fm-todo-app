@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import { useTheme } from './use-theme';
-import { ReactComponent as IMoon } from '@/assets/images/icon-moon.svg';
-import { ReactComponent as ISun } from '@/assets/images/icon-sun.svg';
+import { ReactComponent as Moon } from '@/assets/images/icon-moon.svg';
+import { ReactComponent as Sun } from '@/assets/images/icon-sun.svg';
 
 const Wrapper = styled.div`
   cursor: pointer;
@@ -10,6 +10,22 @@ const Wrapper = styled.div`
 
   &:hover {
     opacity: 0.7;
+  }
+`;
+
+const IMoon = styled(Moon)`
+  transform: scale(0.8);
+
+  @media (min-width: 640px) {
+    transform: scale(1);
+  }
+`;
+
+const ISun = styled(Sun)`
+  transform: scale(0.8);
+
+  @media (min-width: 640px) {
+    transform: scale(1);
   }
 `;
 

@@ -8,14 +8,15 @@ interface AppContainerProps {
 const Container = styled.div`
   font-family: var(--family);
   min-height: 100vh;
-  width: 345px;
+  max-width: 345px;
+  width: 100%;
   padding-inline: 10px;
   margin-inline: auto;
   position: relative;
   z-index: 1;
 
   @media (min-width: 640px) {
-    width: 555px;
+    max-width: 560px;
   }
 `;
 
