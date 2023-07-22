@@ -4,6 +4,7 @@ import { Page } from '@/components/Page';
 import { Header } from './components/Header';
 import { NewTodo } from '@/features/todo/NewTodo';
 import { TodoList } from './features/todo/TodoList';
+import { TodoControls } from './features/todo/TodoControls';
 import { useFetchTodo } from '@/features/todo/useFetchTodo';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Header />
           <NewTodo />
           <TodoList />
+          <TodoControls />
         </AppContainer>
       </Page>
     </AppThemeProvider>
