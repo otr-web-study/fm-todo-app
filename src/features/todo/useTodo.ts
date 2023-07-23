@@ -1,10 +1,12 @@
 import { useAppSelector, useAppDispatch } from '@/appHooks';
 import { toggleTodo, deleteTodo } from './todo-slice';
-import { selectTodo } from './todo-selectors';
+import { selectFilteredTodo } from './todo-selectors';
+import { selectFilter } from '@/features/filter/filter-selectors';
 
 export const useTodo = () => {
   const dispatch = useAppDispatch();
-  const items = useAppSelector(selectTodo);
+  const filter = useAppSelector(selectFilter);
+  const items = useAppSelector((state) => selectFilteredTodo(state, filter));
 
   const handleToggleTodo = (id: string) => {
     dispatch(toggleTodo(id));

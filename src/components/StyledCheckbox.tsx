@@ -43,19 +43,19 @@ const Label = styled.label`
     background-repeat: no-repeat;
   }
 
-  &:has(:not(input:checked)):hover::after {
+  &:not(.checked):hover::after {
     opacity: 1;
   }
 
-  &:has(input:checked)::before {
+  &.checked::before {
     opacity: 1;
   }
 
-  &:has(input:checked):hover::before {
+  &.checked:hover::before {
     scale: 1.1;
   }
 
-  &:has(input:checked) ~ p {
+  &.checked ~ p {
     text-decoration: line-through;
     color: ${(props) => props.theme.fcMoreLight};
   }
@@ -80,7 +80,7 @@ interface StyledCheckboxProps {
 
 export const StyledCheckbox: FC<StyledCheckboxProps> = ({ checked, onChange }) => {
   return (
-    <Label>
+    <Label className={checked ? 'checked' : ''}>
       <Input checked={checked} onChange={onChange} />
     </Label>
   );

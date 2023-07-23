@@ -16,11 +16,11 @@ const Label = styled.label`
   font-weight: 700;
   transition: color 0.3s ease-in-out;
 
-  &:has(input:checked) {
+  &.checked {
     color: ${({ theme }) => theme.fcActive};
   }
 
-  &:has(:not(:checked)):hover {
+  &:not(.checked):hover {
     color: ${({ theme }) => theme.fcHover};
   }
 `;
@@ -35,7 +35,7 @@ const Input = styled.input.attrs({
 
 export const StyledRadiobutton: FC<StyledRadiobuttonProps> = ({ items, checked, onChange }) => {
   return items.map((item) => (
-    <Label key={item}>
+    <Label key={item} className={checked === item ? 'checked' : ''}>
       <Input
         name="filter"
         value={item}
