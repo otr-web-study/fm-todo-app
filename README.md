@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution] ()
+- [Solution] (https://www.frontendmentor.io/solutions/typescriptreactreduxstyledcomponentsframermotion-Xlzcwv-2Cb)
 - [Live Site] (https://endearing-liger-64203f.netlify.app/)
 
 ### Built with
