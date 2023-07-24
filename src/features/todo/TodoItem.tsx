@@ -40,7 +40,7 @@ const DeleteButton = styled.button`
   background-image: var(--icon-cross);
   background-size: cover;
   background-color: transparent;
-  transition: scale 0.3s ease-in-out;
+  transition: scale 0.3s ease-in-out, opacity 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {

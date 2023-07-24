@@ -3,7 +3,7 @@ import { RootState } from '@/store';
 import { Filter } from '@/features/filter/filter-slice';
 
 export const selectTodo = (state: RootState) => state.todo.list;
-
+export const selectIsTodoLoaded = (state: RootState) => state.todo.list.length;
 export const selectLeftTodo = (state: RootState) =>
   state.todo.list.filter((item) => !item.completed).length;
 

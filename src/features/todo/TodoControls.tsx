@@ -7,6 +7,9 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   background-color: transparent;
   grid-row-gap: 15px;
+  box-shadow: -10px 0px 13px 0px rgba(0, 0, 0, 0.03), 10px 0px 13px 0px rgba(0, 0, 0, 0.03),
+    0px 9px 13px 0px rgba(0, 0, 0, 0.03);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.09), transparent);
 
   & > :nth-child(2) {
     grid-column: 1 / span 2;

@@ -1,11 +1,12 @@
 import { createSlice, PayloadAction, nanoid } from '@reduxjs/toolkit';
 import { type Todo } from '@/types/Todo';
+import data from '@/mock/data.json';
 
 interface TodoSlice {
   list: Todo[];
 }
 const initialState: TodoSlice = {
-  list: [],
+  list: data,
 };
 
 export const todoSlice = createSlice({
