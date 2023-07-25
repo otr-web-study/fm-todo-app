@@ -87,7 +87,7 @@ export const NewTodo = () => {
   const { value, handleChange, handleSubmit } = useNewTodo();
   return (
     <Form onSubmit={handleSubmit}>
-      <Button />
+      <Button aria-label="Add New" />
       <Input value={value} onChange={handleChange} />
     </Form>
   );

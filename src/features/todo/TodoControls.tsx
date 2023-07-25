@@ -89,7 +89,9 @@ export const TodoControls = () => {
       <TextLeft>{left} items left</TextLeft>
       <Filter />
       <ButtonWrapper>
-        <ButtonClear onClick={handleClearCompleted}>Clear Completed</ButtonClear>
+        <ButtonClear aria-label="Clear completed" onClick={handleClearCompleted}>
+          Clear Completed
+        </ButtonClear>
       </ButtonWrapper>
     </Wrapper>
   );

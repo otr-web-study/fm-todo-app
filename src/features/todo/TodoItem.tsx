@@ -64,7 +64,7 @@ export const TodoItem: FC<TodoItemProps> = ({ todo, onToggleTodo, onDeleteTodo }
     <Wrapper>
       <StyledCheckbox checked={todo.completed} onChange={onToggleTodo} />
       <Text>{todo.title}</Text>
-      <DeleteButton onClick={onDeleteTodo} />
+      <DeleteButton aria-label="Delete" onClick={onDeleteTodo} />
     </Wrapper>
   );
 };
