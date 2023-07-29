@@ -1,5 +1,6 @@
 import { styled } from 'styled-components';
 import { useNewTodo } from './useNewTodo';
+import { SrOnlySpan } from '@/components/SrOnlySpan';
 
 const Form = styled.form`
   min-height: 46px;
@@ -87,8 +88,10 @@ export const NewTodo = () => {
   const { value, handleChange, handleSubmit } = useNewTodo();
   return (
     <Form onSubmit={handleSubmit}>
-      <Button aria-label="Add New" />
-      <Input value={value} onChange={handleChange} />
+      <Button aria-label="Add New">
+        <SrOnlySpan>Add New</SrOnlySpan>
+      </Button>
+      <Input aria-label="New Todo" value={value} onChange={handleChange} />
     </Form>
   );
 };

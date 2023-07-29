@@ -13,9 +13,11 @@ function App() {
       <Page>
         <AppContainer>
           <Header />
-          <NewTodo />
-          <TodoList />
-          <TodoControls />
+          <main>
+            <NewTodo />
+            <TodoList />
+            <TodoControls />
+          </main>
           <Footer />
         </AppContainer>
       </Page>

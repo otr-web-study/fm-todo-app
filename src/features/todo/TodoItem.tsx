@@ -2,6 +2,7 @@ import { type FC } from 'react';
 import { styled } from 'styled-components';
 import { type Todo } from '@/types/Todo';
 import { StyledCheckbox } from '@/components/StyledCheckbox';
+import { SrOnlySpan } from '@/components/SrOnlySpan';
 
 const Wrapper = styled.div`
   display: grid;
@@ -64,7 +65,9 @@ export const TodoItem: FC<TodoItemProps> = ({ todo, onToggleTodo, onDeleteTodo }
     <Wrapper>
       <StyledCheckbox checked={todo.completed} onChange={onToggleTodo} />
       <Text>{todo.title}</Text>
-      <DeleteButton aria-label="Delete" onClick={onDeleteTodo} />
+      <DeleteButton aria-label="Delete" onClick={onDeleteTodo}>
+        <SrOnlySpan>delete</SrOnlySpan>
+      </DeleteButton>
     </Wrapper>
   );
 };
